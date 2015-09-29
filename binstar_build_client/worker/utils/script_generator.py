@@ -57,7 +57,7 @@ def get_channels(job_data):
             log.info('Bad channel value %r' % ch)
 
     channels = ' --channel ' + ' --channel '.join(_channels) if _channels else 'dev'
-    return channels
+    return ' --channel main'
 
 
 def get_files(context, job_data):
